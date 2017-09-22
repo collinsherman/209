@@ -4,4 +4,6 @@
 
 BreezySwing.jar
 
-launch.json
+.vscode/
+
+*.zip
