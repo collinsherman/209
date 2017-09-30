@@ -21,19 +21,16 @@ public class FileStats{
             while(input.hasNextLine()){
                 lines += 1;
                 String line = input.nextLine();
-                chars += line.length();   
-                         
+                chars += line.length();                      
                 Scanner lineScan = new Scanner(line);
                 while(lineScan.hasNext()){
                     String word = lineScan.next();
                     words += 1;
                 }
             }
-            System.out.print(lines);
-            System.out.print("\n");
-            System.out.print(chars);
-            System.out.print("\n");
-            System.out.print(words);
+            System.out.format("Lines in file: %s", lines);
+            System.out.format("\nWords: %s", words);
+            System.out.format("\nCharacters: %s", chars);
         }
         
         catch(IOException e){
