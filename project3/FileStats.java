@@ -6,7 +6,7 @@ Counts number of lines, words, and characters in text file.
 */
 
 import java.io.*;
-import java.util.Scanner;
+import java.util.*;
 
 public class FileStats{
 
@@ -16,17 +16,28 @@ public class FileStats{
         int chars = 0;
 
         try{
-            File file = new File(command.txt);
+            File file = new File(args[0]);
             Scanner input = new Scanner(file);
-        }catch(IOException e){
-            System.out.println(e.toString());
-        }
-        while(input.hasNextLine){
-            String line = input.nextLine();
-            while(line.hasNext){
-                String word = line.next();
-                System.out.println(word.next());
+            while(input.hasNextLine()){
+                lines += 1;
+                String line = input.nextLine();
+                chars += line.length();   
+                         
+                Scanner lineScan = new Scanner(line);
+                while(lineScan.hasNext()){
+                    String word = lineScan.next();
+                    words += 1;
+                }
             }
+            System.out.print(lines);
+            System.out.print("\n");
+            System.out.print(chars);
+            System.out.print("\n");
+            System.out.print(words);
+        }
+        
+        catch(IOException e){
+            System.out.println(e.toString());
         }
     }
 }
