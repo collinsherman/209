@@ -1,14 +1,17 @@
 /*
-Author: Collin Sherman
 File: Concordance.java
 Project: 3
-Displays the frequency of words in a text file.
 */
 
 import java.io.*;
 import java.util.*;
 
 public class Concordance{
+    /**
+     * Displays the frequency of words in a text file.
+     * @author Collin Sherman
+     * @version 1.0
+     */
 
 
     public static void main(String[] args){

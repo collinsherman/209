@@ -1,14 +1,17 @@
 /*
-Author: Collin Sherman
 File: FileStats.java
 Project: 3
-Counts number of lines, words, and characters in text file.
 */
 
 import java.io.*;
 import java.util.*;
 
 public class FileStats{
+    /**
+     * Counts number of lines, words, and characters in text file.
+     * @author Collin Sherman
+     * @version 1.0
+     */
 
     public static void main(String[] args){
         int lines = 0;

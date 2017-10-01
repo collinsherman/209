@@ -1,14 +1,17 @@
 /*
-Author: Collin Sherman
 File: FileListing.java
 Project: 3
-Outputs text in a file with numbered lines.
 */
 
 import java.io.*;
 import java.util.*;
 
 public class FileListing{
+    /**
+     * Outputs text in a file with numbered lines.
+     * @author Collin Sherman
+     * @version 1.0
+     */
 
     public static void main(String[] args){
         int lines = 0;
